@@ -8,16 +8,12 @@ public class Hangman{
         String guess = "hello";
         int chance = 0;
         int lives = guess.length();
-        int runOnce = 0;
         char[] guessedWords = new char[guess.length()];
         char[] toChar = new char[guess.length()];
         char[] underScore = new char[guess.length()];
-        if (runOnce == 0) {
-            for (int i = 0; i < guess.length(); i++) {
-                underScore[i] = '_';
-                toChar[i] = guess.charAt(i);
-                runOnce++;
-            }
+        for (int i = 0; i < guess.length(); i++) {
+            underScore[i] = '_';
+            toChar[i] = guess.charAt(i);
         }
         System.out.println("Welcome to hangman version 0.1, lets start playing!");
         while (chance != guess.length()) {
