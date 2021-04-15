@@ -1,5 +1,5 @@
 
-JAVA HANGMAN GAME
+JAVA HANGMAN GAME - one of the first projects I ever created
 
 list of things to do:
 
